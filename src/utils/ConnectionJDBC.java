@@ -14,7 +14,9 @@ public class ConnectionJDBC {
      * Database vendor
 
     private static final String vendor = ":mysql:";
+ //private static final String vendor = ":postgresql";
     private static final String location = "//localhost/";
+ //private static final String location = "//localhost/";
     /**
      * Name of database
 
