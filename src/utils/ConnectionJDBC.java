@@ -1,4 +1,5 @@
 package utils;
+import java.sql.*;
 
 import java.sql.DriverManager;
 
@@ -12,7 +13,9 @@ public class ConnectionJDBC {
     private static final String protocol = "jdbc";
     /**
      * Database vendor
-
+ rivate final String url = "jdbc:postgresql://localhost/dvdrental";
+ private final String user = "postgres";
+ private final String password = "<add your password>";
     private static final String vendor = ":mysql:";
  //private static final String vendor = ":postgresql";
     private static final String location = "//localhost/";
