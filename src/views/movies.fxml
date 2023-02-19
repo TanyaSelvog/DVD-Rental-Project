@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoviesController">
-
+   <children>
+      <Label layoutX="111.0" layoutY="37.0" text="Movies That Got Made Movies Page">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="moviesTable" layoutX="51.0" layoutY="128.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Title" />
+          <TableColumn fx:id="yearColumn" prefWidth="75.0" text="Year" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
