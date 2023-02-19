@@ -4,41 +4,29 @@ import java.sql.*;
 import java.sql.DriverManager;
 
 public class ConnectionJDBC {
-}
 
-/**
-    /**
-     * Protocol
 
     private static final String protocol = "jdbc";
-    /**
-     * Database vendor
- rivate final String url = "jdbc:postgresql://localhost/dvdrental";
+
+ private static final String vendor = ":postgresql";
+ private static final String location = "//localhost/";
+
+ private final String url = "jdbc:postgresql://localhost/dvdrental";
  private final String user = "postgres";
- private final String password = "<add your password>";
-    private static final String vendor = ":mysql:";
- //private static final String vendor = ":postgresql";
-    private static final String location = "//localhost/";
- //private static final String location = "//localhost/";
-    /**
-     * Name of database
+ private final String password = "1892
+
+
 
     private static final String databaseName = "dvdrental";
     private static final String jdbcUrl = protocol + vendor + location + databaseName + "?connectionTimeZone=SERVER"; // LOCAL
-    /**
-     * Driver reference
+
 
     private static final String driver = "com.mysql.cj.jdbc.Driver"; // Driver reference
     private static final String userName = "sqlUser"; // Username
-    private static String password = "Passw0rd!"; // Password
-    /**
-     * Connection interface
+   // private static String password = "Passw0rd!"; // Password
 
     public static Connection connection = null;
 
-    /**
-     * Starts the database connection
-     * @return DB connection
 
     public static Connection openConnection()
     {
@@ -56,8 +44,6 @@ public class ConnectionJDBC {
         return connection;
     }
 
-    /**
-     * Closes database connection
 
     public static void closeConnection() {
         try {
@@ -72,4 +58,4 @@ public class ConnectionJDBC {
 
 }
 }
- */
+
