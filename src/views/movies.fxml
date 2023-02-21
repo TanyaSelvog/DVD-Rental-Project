@@ -4,11 +4,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="552.0" prefWidth="841.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoviesController">
+<AnchorPane prefHeight="619.0" prefWidth="861.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoviesController">
    <children>
-      <Label layoutX="221.0" layoutY="34.0" text="Movies That Got Made Movies Page">
+      <Label layoutX="152.0" layoutY="34.0" prefHeight="59.0" prefWidth="585.0" text="Movies That Got Made Movies Page">
          <font>
-            <Font size="25.0" />
+            <Font name="System Bold" size="33.0" />
          </font>
       </Label>
       <TableView fx:id="moviesTable" layoutX="370.0" layoutY="142.0" prefHeight="363.0" prefWidth="417.0" snapToPixel="false">
@@ -17,7 +17,7 @@
           <TableColumn fx:id="yearColumn" prefWidth="75.0" text="Year" />
         </columns>
       </TableView>
-      <Button layoutX="725.0" layoutY="92.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="searchBtn" layoutX="725.0" layoutY="530.0" mnemonicParsing="false" text="Search" />
       <Button layoutX="211.0" layoutY="428.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Horror" />
        <Button layoutX="211.0" layoutY="233.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Family" />
        <Button layoutX="50.0" layoutY="233.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Action" />
@@ -26,5 +26,6 @@
        <Button layoutX="50.0" layoutY="428.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Drama" />
        <Button layoutX="211.0" layoutY="334.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Documentary" />
        <Button layoutX="50.0" layoutY="142.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Animation" />
+      <TextField fx:id="searchTF" layoutX="370.0" layoutY="530.0" prefHeight="30.0" prefWidth="329.0" />
    </children>
 </AnchorPane>
