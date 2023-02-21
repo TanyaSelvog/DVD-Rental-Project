@@ -4,19 +4,27 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoviesController">
+<AnchorPane prefHeight="552.0" prefWidth="841.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoviesController">
    <children>
-      <Label layoutX="111.0" layoutY="37.0" text="Movies That Got Made Movies Page">
+      <Label layoutX="221.0" layoutY="34.0" text="Movies That Got Made Movies Page">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <TableView fx:id="moviesTable" layoutX="51.0" layoutY="128.0" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="moviesTable" layoutX="370.0" layoutY="142.0" prefHeight="363.0" prefWidth="417.0" snapToPixel="false">
         <columns>
           <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Title" />
           <TableColumn fx:id="yearColumn" prefWidth="75.0" text="Year" />
         </columns>
       </TableView>
+      <Button layoutX="725.0" layoutY="92.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="211.0" layoutY="428.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Horror" />
+       <Button layoutX="211.0" layoutY="233.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Family" />
+       <Button layoutX="50.0" layoutY="233.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Action" />
+       <Button layoutX="211.0" layoutY="142.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Comedy" />
+       <Button layoutX="50.0" layoutY="334.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Classics" />
+       <Button layoutX="50.0" layoutY="428.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Drama" />
+       <Button layoutX="211.0" layoutY="334.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Documentary" />
+       <Button layoutX="50.0" layoutY="142.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Animation" />
    </children>
 </AnchorPane>
