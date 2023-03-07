@@ -13,9 +13,9 @@
       </Label>
       <TableView fx:id="moviesTable" layoutX="373.0" layoutY="142.0" prefHeight="363.0" prefWidth="414.0" snapToPixel="false">
         <columns>
-          <TableColumn fx:id="titleColumn" prefWidth="97.0" text="Title" />
-            <TableColumn fx:id="descColumn" prefWidth="212.0" text="Description" />
-          <TableColumn fx:id="yearColumn" prefWidth="104.0" text="Year" />
+            <TableColumn fx:id="rating" prefWidth="72.0" text="Rating" />
+          <TableColumn fx:id="titleColumn" prefWidth="267.0" text="Title" />
+          <TableColumn fx:id="yearColumn" prefWidth="74.0" text="Year" />
         </columns>
       </TableView>
       <Button fx:id="searchBtn" layoutX="676.0" layoutY="530.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="111.0" text="Search" />
