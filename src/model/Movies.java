@@ -17,6 +17,12 @@ public class Movies {
         this.movieDesc = movieDesc;
         this.rating = rating;
     }
+
+    public Movies(String title,  int movieYear, String rating){
+        this.title = title;
+        this.movieYear = movieYear;
+        this.rating = rating;
+    }
     public int getMovieID(){
         return movieID;
     }
