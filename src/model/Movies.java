@@ -7,13 +7,15 @@ public class Movies {
     private int movieYear;
     private String movieGenre;
     private String movieDesc;
+    private String rating;
 
-    public Movies(String title, int movieID, int movieYear, String movieGenre, String movieDesc){
+    public Movies(String title, int movieID, int movieYear, String movieGenre, String movieDesc, String rating){
         this.title = title;
         this.movieID = movieID;
         this.movieYear = movieYear;
         this.movieGenre = movieGenre;
         this.movieDesc = movieDesc;
+        this.rating = rating;
     }
     public int getMovieID(){
         return movieID;
@@ -53,5 +55,13 @@ public class Movies {
 
     public void setMovieDesc(String movieDesc){
         this.movieDesc = movieDesc;
+    }
+
+    public String getRating(){
+        return rating;
+    }
+
+    public void setRating(String rating){
+        this.rating = rating;
     }
 }
