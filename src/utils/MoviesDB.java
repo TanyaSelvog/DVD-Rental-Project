@@ -14,11 +14,11 @@ public class MoviesDB {
      * Method for getting all Movies (in an Observable List)
      * @return movie - list of all movies
      */
-    public static ObservableList<Movies> getContactList() {
-        ObservableList<Movies> contactsList = FXCollections.observableArrayList();
+    public static ObservableList<Movies> getMovieList() {
+        ObservableList<Movies> moviesList = FXCollections.observableArrayList();
 
         try {
-            String sqlStatement = "SELECT * FROM Contacts";
+            String sqlStatement = "SELECT * FROM film";
             PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
 
             ResultSet result = ps.executeQuery();
@@ -29,12 +29,12 @@ public class MoviesDB {
                 String rating = result.getString("rating");
 
                 Movies movie = new Movies(title, movieYear, rating);
-                contactsList.add(movie);
+                moviesList.add(movie);
             }
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
-        return contactsList;
+        return moviesList;
     }
 
 
