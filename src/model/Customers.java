@@ -14,6 +14,13 @@ public class Customers {
         this.lastNameCust = lastNameCust;
     }
 
+    public Customers(int custID, String firstName, String lastName) {
+        this.customerID = customerID;
+        this.firstNameCust = firstNameCust;
+        this.lastNameCust = lastNameCust;
+
+    }
+
     public int getCustomerID(){
         return customerID;
     }
