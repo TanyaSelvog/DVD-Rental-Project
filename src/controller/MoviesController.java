@@ -1,5 +1,6 @@
 package controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -19,5 +20,12 @@ public class MoviesController implements Initializable {
         rating.setCellValueFactory(new PropertyValueFactory<>("rating"));
         titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
         yearColumn.setCellValueFactory(new PropertyValueFactory<>("movieYear"));
+    }
+
+    public void onClickClassics(ActionEvent actionEvent) {
+        
+    }
+
+    public void onClickAction(ActionEvent actionEvent) {
     }
 }
