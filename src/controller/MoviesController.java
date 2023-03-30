@@ -28,4 +28,10 @@ public class MoviesController implements Initializable {
 
     public void onClickAction(ActionEvent actionEvent) {
     }
+
+    public void onClickFamily(ActionEvent actionEvent) {
+    }
+
+    public void onClickComedy(ActionEvent actionEvent) {
+    }
 }
