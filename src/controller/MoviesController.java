@@ -34,4 +34,7 @@ public class MoviesController implements Initializable {
 
     public void onClickComedy(ActionEvent actionEvent) {
     }
+
+    public void onClickDrama(ActionEvent actionEvent) {
+    }
 }
