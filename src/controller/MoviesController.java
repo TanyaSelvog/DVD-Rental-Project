@@ -3,6 +3,7 @@ package controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
@@ -13,6 +14,7 @@ public class MoviesController implements Initializable {
     public TableColumn rating;
     public TableColumn titleColumn;
     public TableColumn yearColumn;
+    public TextField searchTF;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
