@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="619.0" prefWidth="861.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoviesController">
+   <children>
+      <Label layoutX="152.0" layoutY="34.0" prefHeight="59.0" prefWidth="585.0" text="Movies That Got Made Movies Page">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <TableView fx:id="moviesTable" layoutX="373.0" layoutY="142.0" prefHeight="363.0" prefWidth="414.0" snapToPixel="false">
+        <columns>
+            <TableColumn fx:id="rating" prefWidth="72.0" text="Rating" />
+          <TableColumn fx:id="titleColumn" prefWidth="267.0" text="Title" />
+          <TableColumn fx:id="yearColumn" prefWidth="74.0" text="Year" />
+        </columns>
+      </TableView>
+      <Button fx:id="searchBtn" layoutX="676.0" layoutY="530.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="111.0" text="Search" />
+      <Button fx:id="horror" layoutX="211.0" layoutY="427.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Horror" />
+       <Button fx:id="family" layoutX="211.0" layoutY="237.0" mnemonicParsing="false" onAction="#onClickFamily" prefHeight="51.0" prefWidth="125.0" text="Family" />
+       <Button fx:id="action" layoutX="50.0" layoutY="237.0" mnemonicParsing="false"   prefHeight="51.0" onAction="#onClickAction" prefWidth="125.0" text="Action" />
+       <Button fx:id="comedy" layoutX="211.0" layoutY="142.0" mnemonicParsing="false" onAction="#onClickComedy" prefHeight="51.0" prefWidth="125.0" text="Comedy" />
+       <Button fx:id="classics" layoutX="50.0" layoutY="332.0" mnemonicParsing="false" onAction="#onClickClassics" prefHeight="51.0" prefWidth="125.0" text="Classics" />
+       <Button fx:id="drama" layoutX="50.0" layoutY="427.0" mnemonicParsing="false" onAction="#onClickDrama" prefHeight="51.0" prefWidth="125.0" text="Drama" />
+       <Button fx:id="doc" layoutX="211.0" layoutY="332.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Documentary" />
+       <Button fx:id="animation" layoutX="50.0" layoutY="142.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Animation" />
+      <TextField fx:id="searchTF" layoutX="373.0" layoutY="530.0" prefHeight="39.0" prefWidth="287.0" />
+      <Button fx:id="homeBtn" layoutX="27.0" layoutY="554.0" mnemonicParsing="false" text="Home" />
+   </children>
+</AnchorPane>
