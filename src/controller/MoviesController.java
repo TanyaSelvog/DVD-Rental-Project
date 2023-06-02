@@ -44,4 +44,10 @@ moviesTable.setItems(moviesList);
 
     public void onClickDrama(ActionEvent actionEvent) {
     }
+
+    public void onSearchClick(ActionEvent actionEvent) {
+    }
+
+    public void onHomeClick(ActionEvent actionEvent) {
+    }
 }
