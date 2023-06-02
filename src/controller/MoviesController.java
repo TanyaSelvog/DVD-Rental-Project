@@ -2,11 +2,16 @@ package controller;
 
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import model.Movies;
 import utils.MoviesDB;
 
@@ -48,6 +53,14 @@ moviesTable.setItems(moviesList);
     public void onSearchClick(ActionEvent actionEvent) {
     }
 
-    public void onHomeClick(ActionEvent actionEvent) {
+    public void onHomeClick(ActionEvent actionEvent) throws Exception{
+
+
+        Parent root = FXMLLoader.load(getClass().getResource("/views/movies.fxml"));
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setTitle("Movies That Got Made");
+        Scene scene = new Scene(root, 861, 619);
+        stage.setScene(scene);
+        stage.show();
     }
 }

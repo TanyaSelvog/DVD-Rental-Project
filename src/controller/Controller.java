@@ -25,7 +25,7 @@ private Button customersBtn;
 
                 Parent root = FXMLLoader.load(getClass().getResource("/views/movies.fxml"));
                 Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-                stage.setTitle("Reports");
+                stage.setTitle("Movies that Got Made");
                 Scene scene = new Scene(root, 861, 619);
                 stage.setScene(scene);
                 stage.show();
