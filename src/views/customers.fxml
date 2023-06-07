@@ -18,7 +18,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="homeBtn" layoutX="50.0" layoutY="322.0" mnemonicParsing="false" text="Home" />
+      <Button fx:id="homeBtn" layoutX="50.0" layoutY="322.0" mnemonicParsing="false" onAction="#onHomeClick" text="Home" />
       <TextField fx:id="searchTF" layoutX="255.0" layoutY="322.0" />
       <Button fx:id="searchBtn" layoutX="439.0" layoutY="322.0" mnemonicParsing="false" text="Search" />
    </children>
