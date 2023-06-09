@@ -1,6 +1,7 @@
 package controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
@@ -14,7 +15,9 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
 
+@FXML
 private Button moviesBtn;
+@FXML
 private Button customersBtn;
 
 
