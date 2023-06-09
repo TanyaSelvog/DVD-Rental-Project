@@ -36,20 +36,32 @@ public class MoviesDB {
         }
         return moviesList;
     }
+// TODO @ Tanya - Working on June 9
+    public static ObservableList<Movies> getGenre(){
+        ObservableList<Movies> genreList = FXCollections.observableArrayList();
+        try {
+            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id " +
+                    "Join category c ON p.category_id = c.category_id WHERE f.rating IN ('G', 'PG', 'PG-13');";
+            PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
 
-   // public static ObservableList<Movies> get
-/** for database - future use
- *
- *
- *  SELECT f.title AS movie_title,
- *  	f.rating,
- * 	c.name AS genre,
- *     f.release_year
- *    FROM film_category p
- *      JOIN film f ON p.film_id = f.film_id
- *      Join category c ON p.category_id = c.category_id
- * 	WHERE f.rating IN ('G', 'PG', 'PG-13');
- */
+            ResultSet result = ps.executeQuery();
+            while (result.next()) {
+                String title = result.getString("title");
+                int movieYear = result.getInt("release_year");
+                String rating = result.getString("rating");
+
+                Movies movie = new Movies(title, movieYear, rating);
+                genreList.add(movie);
+            }
+        } catch (SQLException exception) {
+            exception.printStackTrace();
+        }
+        return genreList;
+    }
+            }
+    }
+
+
 
 
 
