@@ -59,7 +59,7 @@ public class MoviesDB {
         return genreList;
     }
             }
-    }
+
 
 // For future use - June 10
 //SELECT f.title AS movie_title,
@@ -67,6 +67,10 @@ public class MoviesDB {
 //f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id
 //Join category c ON p.category_id = c.category_id WHERE c.name IN ('Horror');
 
+//SELECT f.title AS movie_title,
+//f.rating, c.name AS genre,
+//f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id
+//Join category c ON p.category_id = c.category_id WHERE c.name IN ('Documentary');
 
 
-}
+
