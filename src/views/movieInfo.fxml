@@ -2,10 +2,17 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="562.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoviesInfoController">
    <children>
-      <Button id="homeBtn" layoutX="48.0" layoutY="289.0" mnemonicParsing="false" text="Home" />
+      <Button id="homeBtn" layoutX="440.0" layoutY="288.0" mnemonicParsing="false" text="Home" />
+      <Label layoutX="48.0" layoutY="34.0" text="Movie Details">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="64.0" layoutY="288.0" mnemonicParsing="false" text="Return to Movies List" />
    </children>
 </AnchorPane>
