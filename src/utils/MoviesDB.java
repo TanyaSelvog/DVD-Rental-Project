@@ -18,7 +18,7 @@ public class MoviesDB {
         ObservableList<Movies> moviesList = FXCollections.observableArrayList();
 
         try {
-            String sqlStatement = "SELECT * FROM film";
+            String sqlStatement = "SELECT * FROM film where rating != 'NC-17'";
             PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
 
             ResultSet result = ps.executeQuery();
