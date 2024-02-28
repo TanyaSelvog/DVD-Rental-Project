@@ -14,5 +14,6 @@
       </Label>
       <Button layoutX="64.0" layoutY="288.0" mnemonicParsing="false" text="Return to Movies List" />
       <Button id="custBtn" layoutX="355.0" layoutY="289.0" mnemonicParsing="false" text="Customers" />
+      <Label layoutX="49.0" layoutY="88.0" text="Movie Title" />
    </children>
 </AnchorPane>
