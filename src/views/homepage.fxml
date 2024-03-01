@@ -6,12 +6,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="562.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
    <children>
-      <Button fx:id="moviesBtn" layoutX="129.0" layoutY="214.0" mnemonicParsing="false" onAction="#onMoviesClick" prefHeight="41.0" prefWidth="88.0" text="Movies" />
-      <Button fx:id="customersBtn" layoutX="349.0" layoutY="214.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="88.0" text="Customers" />
+      <Button fx:id="moviesBtn" layoutX="66.0" layoutY="169.0" mnemonicParsing="false" onAction="#onMoviesClick" prefHeight="41.0" prefWidth="88.0" text="Movies" />
+      <Button fx:id="customersBtn" layoutX="237.0" layoutY="169.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="88.0" text="Customers" />
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="89.0" prefWidth="563.0" text="Movies That Got Made" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="34.0" />
          </font>
       </Label>
+      <Button layoutX="407.0" layoutY="169.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="82.0" text="Reports" />
    </children>
 </AnchorPane>
