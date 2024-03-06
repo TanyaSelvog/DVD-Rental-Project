@@ -36,6 +36,14 @@ public class Customers {
     public void setFirstNameCust(String firstNameCust){
         this.firstNameCust = firstNameCust;
     }
+
+    public String getLastNameCust(){
+        return lastNameCust;
+    }
+
+    public void setLastNameCust(String lastNameCust){
+        this.lastNameCust= lastNameCust;
+    }
     public String getEmail(){
         return email;
     }
