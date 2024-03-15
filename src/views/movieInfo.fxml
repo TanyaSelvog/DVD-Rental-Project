@@ -17,5 +17,8 @@
       <Label layoutX="49.0" layoutY="88.0" text="Movie Title" />
       <Label layoutX="49.0" layoutY="137.0" text="Rating" />
       <Label layoutX="49.0" layoutY="201.0" text="Year" />
+      <TextField fx:id="titleTF" layoutX="142.0" layoutY="84.0" />
+      <TextField fx:id="ratingTF" layoutX="142.0" layoutY="143.0" />
+      <TextField fx:id="yrTF" layoutX="142.0" layoutY="197.0" />
    </children>
 </AnchorPane>
