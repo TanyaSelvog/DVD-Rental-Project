@@ -56,7 +56,7 @@ moviesTable.setItems(moviesList);
     public void onHomeClick(ActionEvent actionEvent) throws Exception{
 
 
-        Parent root = FXMLLoader.load(getClass().getResource("/views/movies.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/views/homepage.fxml"));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setTitle("Movies That Got Made");
         Scene scene = new Scene(root, 861, 619);
