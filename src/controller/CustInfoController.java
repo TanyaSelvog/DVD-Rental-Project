@@ -4,6 +4,7 @@ import javafx.fxml.Initializable;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import model.Customers;
 
 public class CustInfoController implements Initializable {
     @Override
