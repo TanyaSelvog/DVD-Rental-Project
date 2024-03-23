@@ -60,7 +60,7 @@ public class MoviesDB {
     }
             }
 
-
+// public static ObservableList<Movies> getHorror(){
 // For future use - June 10
 //SELECT f.title AS movie_title,
 //f.rating, c.name AS genre,
