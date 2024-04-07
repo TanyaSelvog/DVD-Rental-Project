@@ -4,9 +4,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustInfoController">
+<AnchorPane id="cancelBtn" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustInfoController">
    <children>
-      <Button fx:id="exitNoSaveBtn" layoutX="317.0" layoutY="333.0" mnemonicParsing="false" text="Exit without Saving" />
+      <Button fx:id="exitNoSaveBtn" layoutX="317.0" layoutY="333.0" mnemonicParsing="false" text="Cancel" />
       <Button fx:id="saveBtn" layoutX="477.0" layoutY="333.0" mnemonicParsing="false" text="Save" />
       <Label layoutX="28.0" layoutY="93.0" text="First Name" />
       <Label layoutX="29.0" layoutY="158.0" text="Last Name" />
