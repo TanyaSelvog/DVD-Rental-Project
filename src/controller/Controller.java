@@ -34,6 +34,22 @@ private Button customersBtn;
                 stage.show();
         }
 
+        public void onReportsClick(ActionEvent actionEvent) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("/views/reports.fxml"));
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+                stage.setTitle("Movies that Got Made");
+        Scene scene = new Scene(root, 861, 619);
+                stage.setScene(scene);
+                stage.show();
+}
+        public void onCustClick(ActionEvent actionEvent) throws Exception {
+                Parent root = FXMLLoader.load(getClass().getResource("/views/customers.fxml"));
+                Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+                stage.setTitle("Movies that Got Made");
+                Scene scene = new Scene(root, 861, 619);
+                stage.setScene(scene);
+                stage.show();
+        }
         @Override
         public void initialize(URL url, ResourceBundle resourceBundle) {
 
