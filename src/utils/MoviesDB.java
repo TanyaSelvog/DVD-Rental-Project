@@ -58,8 +58,31 @@ public class MoviesDB {
         }
         return genreList;
     }
-            }
 
+    public static ObservableList<Movies> getHorrorList() {
+        ObservableList<Movies> horrorList = FXCollections.observableArrayList();
+
+        try {
+            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'";
+
+            PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
+
+            ResultSet result = ps.executeQuery();
+            while (result.next()) {
+
+                String title = result.getString("movie_title");
+                int movieYear = result.getInt("release_year");
+                String rating = result.getString("rating");
+
+                Movies movie = new Movies(title, movieYear, rating);
+                horrorList.add(movie);
+            }
+        } catch (SQLException exception) {
+            exception.printStackTrace();
+        }
+        return horrorList;
+    }
+}
 // public static ObservableList<Movies> getHorror(){
 // For future use - June 10
 //SELECT f.title AS movie_title,

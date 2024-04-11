@@ -26,9 +26,10 @@ public class MoviesController implements Initializable {
     public TextField searchTF;
 
     private ObservableList<Movies> moviesList = MoviesDB.getMovieList();
+    private ObservableList<Movies> horrorList = MoviesDB.getHorrorList();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-moviesTable.setItems(moviesList);
+moviesTable.setItems(horrorList);
         rating.setCellValueFactory(new PropertyValueFactory<>("rating"));
         titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
         yearColumn.setCellValueFactory(new PropertyValueFactory<>("movieYear"));
