@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="cancelBtn" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFCA4B;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustInfoController">
+   <children>
+      <Button fx:id="exitNoSaveBtn" layoutX="317.0" layoutY="333.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="saveBtn" layoutX="477.0" layoutY="333.0" mnemonicParsing="false" text="Save" />
+      <Label layoutX="28.0" layoutY="93.0" text="First Name" />
+      <Label layoutX="29.0" layoutY="158.0" text="Last Name" />
+      <Label layoutX="31.0" layoutY="213.0" text="Phone" />
+      <TextField fx:id="fNameTF" layoutX="118.0" layoutY="88.0" />
+      <TextField fx:id="lastNameTF" layoutX="118.0" layoutY="153.0" />
+      <TextField fx:id="phoneTF" layoutX="118.0" layoutY="222.0" />
+      <Label layoutX="49.0" layoutY="31.0" text="Customer Information">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   </children>
+</AnchorPane>
