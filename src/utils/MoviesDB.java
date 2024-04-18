@@ -87,7 +87,7 @@ public class MoviesDB {
     //created 4.13. - need to edit
 
     public static ObservableList<Movies> getDocList() {
-        ObservableList<Movies> comedyList = FXCollections.observableArrayList();
+        ObservableList<Movies> docList = FXCollections.observableArrayList();
 
         try {
             String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'AND rating != 'NC-17'";
@@ -102,12 +102,12 @@ public class MoviesDB {
                 String rating = result.getString("rating");
 
                 Movies movie = new Movies(title, movieYear, rating);
-                comedyList.add(movie);
+                docList.add(movie);
             }
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
-        return comedyList;
+        return docList;
 
     }
     public static ObservableList<Movies> getFamilyList() {
@@ -135,7 +135,7 @@ public class MoviesDB {
 
     }
     public static ObservableList<Movies> getAnimationList() {
-        ObservableList<Movies> comedyList = FXCollections.observableArrayList();
+        ObservableList<Movies> animeList = FXCollections.observableArrayList();
 
         try {
             String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'AND rating != 'NC-17'";
@@ -150,16 +150,16 @@ public class MoviesDB {
                 String rating = result.getString("rating");
 
                 Movies movie = new Movies(title, movieYear, rating);
-                comedyList.add(movie);
+                animeList.add(movie);
             }
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
-        return comedyList;
+        return animeList;
 
     }
     public static ObservableList<Movies> getClassicsList() {
-        ObservableList<Movies> comedyList = FXCollections.observableArrayList();
+        ObservableList<Movies> classicsList = FXCollections.observableArrayList();
 
         try {
             String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'AND rating != 'NC-17'";
@@ -174,12 +174,12 @@ public class MoviesDB {
                 String rating = result.getString("rating");
 
                 Movies movie = new Movies(title, movieYear, rating);
-                comedyList.add(movie);
+                classicsList.add(movie);
             }
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
-        return comedyList;
+        return classicsList;
 
     }
     public static ObservableList<Movies> getComedyList() {
