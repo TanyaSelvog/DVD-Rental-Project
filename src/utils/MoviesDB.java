@@ -90,7 +90,7 @@ public class MoviesDB {
         ObservableList<Movies> docList = FXCollections.observableArrayList();
 
         try {
-            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'AND rating != 'NC-17'";
+            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Documentary' AND rating != 'NC-17'";
 
             PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
 
@@ -114,7 +114,7 @@ public class MoviesDB {
         ObservableList<Movies> familyList = FXCollections.observableArrayList();
 
         try {
-            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'AND rating != 'NC-17'";
+            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Family' AND rating != 'NC-17'";
 
             PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
 
@@ -138,7 +138,7 @@ public class MoviesDB {
         ObservableList<Movies> animeList = FXCollections.observableArrayList();
 
         try {
-            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'AND rating != 'NC-17'";
+            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Animation' AND rating != 'NC-17'";
 
             PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
 
@@ -162,7 +162,7 @@ public class MoviesDB {
         ObservableList<Movies> classicsList = FXCollections.observableArrayList();
 
         try {
-            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'AND rating != 'NC-17'";
+            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Classics' AND rating != 'NC-17'";
 
             PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
 
@@ -186,7 +186,7 @@ public class MoviesDB {
         ObservableList<Movies> comedyList = FXCollections.observableArrayList();
 
         try {
-            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'AND rating != 'NC-17'";
+            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Comedy' AND rating != 'NC-17'";
 
             PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
 
@@ -210,7 +210,7 @@ public class MoviesDB {
         ObservableList<Movies> comedyList = FXCollections.observableArrayList();
 
         try {
-            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'AND rating != 'NC-17'";
+            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Action' AND rating != 'NC-17'";
 
             PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
 
@@ -234,7 +234,7 @@ public class MoviesDB {
         ObservableList<Movies> dramaList = FXCollections.observableArrayList();
 
         try {
-            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Horror'AND rating != 'NC-17'";
+            String sqlStatement = "SELECT f.title AS movie_title, f.rating, c.name AS genre, f.release_year FROM film_category p JOIN film f ON p.film_id = f.film_id Join category c ON p.category_id = c.category_id WHERE c.name = 'Drama' AND rating != 'NC-17'";
 
             PreparedStatement ps = ConnectionJDBC.connect().prepareStatement(sqlStatement);
 
