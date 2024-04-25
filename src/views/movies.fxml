@@ -25,8 +25,8 @@
        <Button fx:id="comedy" layoutX="211.0" layoutY="142.0" mnemonicParsing="false" onAction="#onClickComedy" prefHeight="51.0" prefWidth="125.0" text="Comedy" />
        <Button fx:id="classics" layoutX="50.0" layoutY="332.0" mnemonicParsing="false" onAction="#onClickClassics" prefHeight="51.0" prefWidth="125.0" text="Classics" />
        <Button fx:id="drama" layoutX="50.0" layoutY="427.0" mnemonicParsing="false" onAction="#onClickDrama" prefHeight="51.0" prefWidth="125.0" text="Drama" />
-       <Button fx:id="doc" layoutX="211.0" layoutY="332.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Documentary" />
-       <Button fx:id="animation" layoutX="50.0" layoutY="142.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Animation" />
+       <Button fx:id="doc" layoutX="211.0" layoutY="332.0" mnemonicParsing="false" onAction="#onClickDoc" prefHeight="51.0" prefWidth="125.0" text="Documentary" />
+       <Button fx:id="animation" layoutX="50.0" layoutY="142.0" mnemonicParsing="false" onAction="#onClickAnime" prefHeight="51.0" prefWidth="125.0" text="Animation" />
       <TextField fx:id="searchTF" layoutX="373.0" layoutY="530.0" prefHeight="39.0" onAction="#onSearchClick" prefWidth="287.0" />
       <Button fx:id="homeBtn" layoutX="27.0" layoutY="554.0" mnemonicParsing="false" onAction="#onHomeClick" text="Home" />
    </children>
