@@ -107,4 +107,12 @@ moviesTable.setItems(horrorList);
         titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
         yearColumn.setCellValueFactory(new PropertyValueFactory<>("movieYear"));
     }
+
+    public void onHorrorClick(ActionEvent actionEvent) {
+        moviesTable.setItems(horrorList);
+        rating.setCellValueFactory(new PropertyValueFactory<>("rating"));
+        titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
+        yearColumn.setCellValueFactory(new PropertyValueFactory<>("movieYear"));
+
+    }
 }

@@ -19,7 +19,7 @@
         </columns>
       </TableView>
       <Button fx:id="searchBtn" layoutX="676.0" layoutY="530.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="111.0" text="Search" />
-      <Button fx:id="horror" layoutX="211.0" layoutY="427.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="125.0" text="Horror" />
+      <Button fx:id="horror" layoutX="211.0" layoutY="427.0" mnemonicParsing="false" onAction="#onHorrorClick" prefHeight="51.0" prefWidth="125.0" text="Horror" />
        <Button fx:id="family" layoutX="211.0" layoutY="237.0" mnemonicParsing="false" onAction="#onClickFamily" prefHeight="51.0" prefWidth="125.0" text="Family" />
        <Button fx:id="action" layoutX="50.0" layoutY="237.0" mnemonicParsing="false"   prefHeight="51.0" onAction="#onClickAction" prefWidth="125.0" text="Action" />
        <Button fx:id="comedy" layoutX="211.0" layoutY="142.0" mnemonicParsing="false" onAction="#onClickComedy" prefHeight="51.0" prefWidth="125.0" text="Comedy" />
