@@ -37,10 +37,7 @@ public class MoviesController implements Initializable {
     private ObservableList<Movies> familyList = MoviesDB.getFamilyList();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-moviesTable.setItems(horrorList);
-        rating.setCellValueFactory(new PropertyValueFactory<>("rating"));
-        titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
-        yearColumn.setCellValueFactory(new PropertyValueFactory<>("movieYear"));
+
     }
 
     public void onClickClassics(ActionEvent actionEvent) {
