@@ -30,6 +30,7 @@ public class ReportsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         reportsCombo.getItems().add("All Movies");
+        reportsCombo.getItems().add("All Customers");
 
     }
 }
